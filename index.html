@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linking Custom Css -->
+    <link rel="stylesheet" href="./assets/style.css">
+  
+    <!-- Linking Materialize Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <!-- Linking Materialize Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <!-- Linking TextFit -->
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/textFit.js"></script>
+
+    <!-- linking google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <title>Project one</title>
+</head>
+<body>
+    <!-- Web Header (1# container) -->
+    <header class="container" id="one">
+        <div class="row">
+            <!--chrissie sparling - title of smartypants -->
+            <h1 class="col s12 offset-s2 center-align">Smarty Pants!?!</h1>
+        </div>
+    </header>
+
+     <!-- Line Break -->
+     <hr class="col s12">
+
+    <!-- Main Content of Website- Chrissie Sparling -->
+    <main id="main">
+        <!-- #2 container -->
+     <section class="page-section">
+
+           <!-- DON'T NEED -->
+        <img src=".placeholder" alt = "description of icon or mascot"id=" mascot2">
+           <!-- END POINT OF DONT NEED-->
+
+                <!-- trivia Card -->
+                <div class="container" id="trivia-card">
+                    <div class="row">
+                        <div class="card">
+                            <div class="col s12 m6 offset-m3 custom-card">
+                    <h2>Would you like to play a game of Trivia?</h2>    
+                            </div>
+                            <!-- column 1 -->
+                            <div class="column-1" id="questions">
+                                <div class="col s6 offset-m3">
+                                <input type="text" id="triviaInput" name="trivia-input" placeholder="drop down menu">
+                                <!-- Search Button -->
+                        <button class="btn col s6 offset-s3" for="triviaInput" type="submit" id="searchBtn">search</button>
+                                <div class="column-1" id="questionType">
+                                <input type="text" id="questionType" name="trivia-input" placeholder="drop down menu">
+                                </div>
+                            </div>
+                        </div>
+                            <!-- column 2 -->
+
+                                    <div class="column-2" id="category">
+                                        <input type="text" id="Random" name="Random-input" placeholder="drop down menu">
+                                        <div class="column-2" id="difficulty">
+                                            <input type="text" id="diffLevel" name="diff-Level" placeholder="drop down menu">
+                        
+                        <!-- Search Button -->
+                        <button class="btn col s6 offset-s3" for="triviaInput" type="submit" id="searchBtn">search</button>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+           
+        <section class="column-1">
+                        <div class="col s3 offset-m3 custom-card" id="trivia-card"></div>
+
+                    
+                </section>
+                    
+                    <!-- Line Break -->
+                    <hr class="col s12">
+
+                    <!-- Page 1 Contents -->
+                    <div class="page-1">
+
+                        <!-- trivia Input -->
+                        <input type="text" id="triviaInput" name="trivia-input" placeholder="drop down box">
+                        
+                        <!-- Search Button -->
+                        <button class="btn col s6 offset-s3" for="triviaInput" type="submit" id="searchBtn">search</button>
+                    
+                    </div>
+
+                    <!-- Page 2 Contents -->
+                    <div class="container page-2">
+
+                        <!-- music Recipe Overview -->
+                        <div class="row" id="music-recipes">
+
+                            <!-- music Name -->
+                            <h3 class="col s12 center-align" id="music-name"></h3>
+                            
+                            <!-- music Image -->
+                            <img class="col s12" id="music-image" alt="music-image">
+                        
+                        </div>
+
+                        <!-- Previous music Recipe Button -->
+                        <button class="btn-flat col s6 prev-btn btn light-blue-text text-lighten-5">&lt;</button>
+                        
+                        <!-- Next music Recipe Button -->
+                        <button class="btn-flat col s6 next-btn btn light-blue-text text-lighten-5">&gt;</button>
+                        
+                        <!-- (-/-) Recipe Marker -->
+                        <p class="light-blue-text text-lighten-5">( <span id="list-marker"></span> / <span id="list-marker-length"></span> )</p>
+                        
+                        <!-- See Recipe Button -->
+                        <button data-target="modal1" class="btn modal-trigger col s6 offset-s3" id="see-recipe-btn">Recipe</button>
+                    
+                    </div>
+                
+                </div>
+<main class="main-container"></main>
+    <script src="./js/script.js"></script>
+</body>
+</html>
